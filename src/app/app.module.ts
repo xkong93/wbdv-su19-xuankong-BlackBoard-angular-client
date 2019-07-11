@@ -11,7 +11,11 @@ import {UserService} from './services/user.service.client';
 import {CourseNavigatorServiceClient} from './services/CourseNavigatorServiceClient';
 import { CourseNavigatorComponent } from './course-navigator/course-navigator.component';
 import {ModuleServiceClient} from './services/ModuleServiceClient';
-import { ModuleComponent } from './module/module.component';
+import { CourseListComponent } from './course-list/course-list.component';
+import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import { ModuleListComponent } from './module-list/module-list.component';
+import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
+import {LessonServiceClient} from './services/LessonServiceClient';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { ModuleComponent } from './module/module.component';
     RegisterComponent,
     ProfileComponent,
     CourseNavigatorComponent,
-    ModuleComponent
+    CourseListComponent,
+    CourseViewerComponent,
+    ModuleListComponent,
+    LessonTabsComponent,
   ],
   imports: [
     routing,
@@ -31,6 +38,7 @@ import { ModuleComponent } from './module/module.component';
     UserService,
     CourseNavigatorServiceClient,
     ModuleServiceClient,
+    LessonServiceClient
   ],
   bootstrap: [AppComponent]
 })

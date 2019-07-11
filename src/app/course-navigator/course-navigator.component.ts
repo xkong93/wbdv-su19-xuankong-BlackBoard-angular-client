@@ -37,7 +37,7 @@ export class CourseNavigatorComponent implements OnInit {
   selectCourse = course => {
     this.selectedCourse = course;
     // console.log(this.selectedCourse)
-    // this.router.navigate(['/course/', this.selectedCourse.id]); //it will match json field
+    // this.router.navigate(['/course-list/', this.selectedCourse.id]); //it will match json field
 
   }
 

@@ -12,7 +12,7 @@ export class LessonServiceClient {
   }
 
   findLessonsForModule = (mid) => {
-    return fetch('http://localhost:8080/api/lesson/' + mid + '/lesson')
+    return fetch('http://localhost:8080/api/module/' + mid + '/lesson')
       .then(response => response.json());
   }
 }
