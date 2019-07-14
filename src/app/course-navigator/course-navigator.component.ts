@@ -31,7 +31,6 @@ export class CourseNavigatorComponent implements OnInit {
   ngOnInit() {
     this.service.findAllCourses()
       .then(courses => this.courses = courses);
-    console.log(this.courses);
   }
 
   selectCourse = course => {

@@ -22,7 +22,6 @@ export class ModuleListComponent implements OnInit {
         this.moduleId = params['mid'];
         this.service.findModulesForCourse(this.courseId)
           .then(modules => this.modules = modules);
-        console.log(this.modules);
       });
   }
 

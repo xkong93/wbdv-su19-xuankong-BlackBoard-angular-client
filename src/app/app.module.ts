@@ -16,6 +16,10 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import {LessonServiceClient} from './services/LessonServiceClient';
+import { TopicPillsComponent } from './topic-pills/topic-pills.component';
+import {TopicServiceClient} from './services/TopicServiceClient';
+import { WidgetListComponent } from './widget-list/widget-list.component';
+import {WidgetServiceClient} from './services/WidgetServiceClient';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,8 @@ import {LessonServiceClient} from './services/LessonServiceClient';
     CourseViewerComponent,
     ModuleListComponent,
     LessonTabsComponent,
+    TopicPillsComponent,
+    WidgetListComponent,
   ],
   imports: [
     routing,
@@ -38,7 +44,9 @@ import {LessonServiceClient} from './services/LessonServiceClient';
     UserService,
     CourseNavigatorServiceClient,
     ModuleServiceClient,
-    LessonServiceClient
+    LessonServiceClient,
+    TopicServiceClient,
+    WidgetServiceClient
   ],
   bootstrap: [AppComponent]
 })

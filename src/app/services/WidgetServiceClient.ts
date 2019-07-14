@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 
 @Injectable()
-export class TopicServiceClient {
+export class WidgetServiceClient {
   findAllWidgets = () => {
     return fetch('http://localhost:8080/api/widget').then(response => response.json());
   }
